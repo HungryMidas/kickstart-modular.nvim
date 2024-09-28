@@ -1,9 +1,8 @@
 -- [[ Basic Keymaps ]]
 --  See `:help vim.keymap.set()`
-
 -- <C-d> and <C-u> will center screen
-vim.keymap.set('n', '<C-d>', '<C-d> zz')
-vim.keymap.set('n', '<C-u>', '<C-u> zz')
+vim.keymap.set('n', '<C-d>', '<C-d>zz', { desc = 'Scroll [D]own window and center' })
+vim.keymap.set('n', '<C-u>', '<C-u>zz', { desc = 'Scroll [U]p window and center' })
 
 -- Clear highlights on search when pressing <Esc> in normal mode
 --  See `:help hlsearch`
