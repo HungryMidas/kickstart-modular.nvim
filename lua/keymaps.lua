@@ -1,5 +1,10 @@
 -- [[ Basic Keymaps ]]
 --  See `:help vim.keymap.set()`
+-- Compiling
+-- TODO: I don't want to use compiler shortcuts until I actually know how to use the CLI to compile
+
+--  Open the file explorer
+vim.keymap.set('n', '<leader>R', '<cmd>:Rexplore<cr>', { desc = '[R]explore' })
 -- <C-d> and <C-u> will center screen
 vim.keymap.set('n', '<C-d>', '<C-d>zz', { desc = 'Scroll [D]own window and center' })
 vim.keymap.set('n', '<C-u>', '<C-u>zz', { desc = 'Scroll [U]p window and center' })
